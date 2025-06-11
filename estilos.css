@@ -19,7 +19,7 @@ html, body {
 
 body {
   font-family: "Roboto", sans-serif;
-  background: url("Fondo.png") no-repeat center center fixed;
+  background: url("Fondo.webp") no-repeat center center fixed;
   background-size: contain;
   background-color: #000; /* para bordes */
   display: flex;
