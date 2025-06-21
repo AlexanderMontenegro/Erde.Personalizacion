@@ -8,42 +8,67 @@
     <link rel="stylesheet" href="estilos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.0.0/tsparticles.bundle.min.js" defer></script>
+    <script defer>
+      document.addEventListener("DOMContentLoaded", () => {
+        tsParticles.load("tsparticles", {
+          fullScreen: { enable: true, zIndex: -1 },
+          background: { color: "#000000" },
+          particles: {
+            number: { value: 50 },
+            color: { value: "#ffffff" },
+            shape: { type: "circle" },
+            opacity: { value: 0.5 },
+            size: { value: { min: 1, max: 5 } },
+            move: { enable: true, speed: 1 },
+            links: {
+              enable: true,
+              distance: 120,
+              color: "#ffffff",
+              opacity: 0.3,
+              width: 1,
+            },
+          },
+          interactivity: {
+            events: {
+              onHover: { enable: true, mode: "repulse" },
+              onClick: { enable: true, mode: "push" },
+            },
+            modes: {
+              repulse: { distance: 100 },
+              push: { quantity: 4 },
+            },
+          },
+        });
+      });
+    </script>
   </head>
   <body>
+    <div id="tsparticles"></div>
+
     <div class="container">
-      <img src="LOGO2.png" alt="Logo ERDE" class="logo" />
+      <img src="LOGO2.png" alt="Logo ERDE" class="logo" loading="lazy" />
 
       <div class="icon-grid">
-        <a
-          href="https://www.facebook.com/share/19C6R9ygNf/"
-          target="_blank"
-          rel="noopener"
-        >
-          <img src="facebook.png" alt="Facebook" class="icon-img" />
+        <a href="https://www.facebook.com/share/19C6R9ygNf/" target="_blank" rel="noopener" aria-label="Facebook">
+          <img src="facebook.png" alt="Facebook" class="icon-img" loading="lazy" />
         </a>
-        <a
-          href="https://www.instagram.com/erde.personalizados?igsh=MXNuejFueDc1bDdrdg=="
-          target="_blank"
-          rel="noopener"
-        >
-          <img src="instagram.png" alt="Instagram" class="icon-img" />
+        <a href="https://www.instagram.com/erde.personalizados?igsh=MXNuejFueDc1bDdrdg==" target="_blank" rel="noopener" aria-label="Instagram">
+          <img src="instagram.png" alt="Instagram" class="icon-img" loading="lazy" />
         </a>
-        <a href="https://wa.me/5491170504193" target="_blank" rel="noopener">
-          <img src="whatsapp.png" alt="WhatsApp" class="icon-img" />
+        <a href="https://wa.me/5491170504193" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <img src="whatsapp.png" alt="WhatsApp" class="icon-img" loading="lazy" />
         </a>
-        <a href="mailto:elrincondeemily.erde@gmail.com">
-          <img src="correo.png" alt="Email" class="icon-img" />
+        <a href="mailto:elrincondeemily.erde@gmail.com" aria-label="Correo">
+          <img src="correo.png" alt="Email" class="icon-img" loading="lazy" />
         </a>
-        <a
-          href="https://erde-landigpage.onrender.com"
-          target="_blank"
-          rel="noopener"
-        >
-          <img src="sitio-web.gif" alt="Eweb" class="icon-img" />
+
+      </div>
+      <div>
+
+        <a href="https://erde-landigpage.onrender.com" target="_blank" rel="noopener" aria-label="Sitio Web">
+          <img src="pagina web.png" alt="Sitio Web" class="icon-img" loading="lazy" />
         </a>
       </div>
     </div>
