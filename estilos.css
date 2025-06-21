@@ -38,8 +38,8 @@ body {
 }
 
 .logo {
-  width: 140px;
-  height: 140px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 2rem;
@@ -101,19 +101,25 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
   margin-bottom: 2rem;
 }
 
 .icon-img {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border-radius: 12px;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.863);
   transition: transform 0.3s ease;
 }
 
+.icon-img.icon-img{
+  width: 100px;
+  height: 100px;
+}
+
 .icon-img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .historias {
