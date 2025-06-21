@@ -31,6 +31,7 @@ body {
   overflow-x: hidden;
 }
 
+/* Overlay degradado animado */
 body::before {
   content: "";
   position: fixed;
@@ -45,9 +46,9 @@ body::before {
 }
 
 @keyframes animateOverlay {
-  0% {background-position: 0% 50%;}
-  50% {background-position: 100% 50%;}
-  100% {background-position: 0% 50%;}
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .container {
@@ -58,6 +59,7 @@ body::before {
   text-align: center;
 }
 
+/* Logo */
 .logo {
   width: 220px;
   height: 220px;
@@ -68,6 +70,7 @@ body::before {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
+/* Grid de iconos */
 .icon-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
@@ -76,6 +79,7 @@ body::before {
   padding: 1rem 0;
 }
 
+/* Estilo de iconos */
 .icon-img {
   width: 80px;
   height: 80px;
@@ -91,6 +95,7 @@ body::before {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
+/* Sección de historias o iframe */
 .historias {
   width: 100%;
   max-width: 600px;
@@ -111,7 +116,7 @@ body::before {
   border-radius: 12px;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE TABLET */
 @media (max-width: 768px) {
   .logo {
     width: 180px;
@@ -124,6 +129,7 @@ body::before {
   }
 }
 
+/* RESPONSIVE CELULAR */
 @media (max-width: 480px) {
   .logo {
     width: 140px;
@@ -136,7 +142,9 @@ body::before {
   }
 
   .icon-grid {
+    grid-template-columns: repeat(2, 2fr); /* 2 filas x 3 columnas */
     gap: 1rem;
+    justify-items: center;
   }
 
   .historias iframe {
