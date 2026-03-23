@@ -159,21 +159,16 @@ body::before {
 }
 
 
-/* RESPONSIVE TABLET */
-@media (max-width: 768px) {
-  .logo {
-    width: 180px;
-    height: 180px;
-  }
+/* RESPONSIVE  */
+@media (max-width: 700px) {
+
 
   .icon-img {
     width: 60px;
     height: 60px;
   }
-}
 
-/* RESPONSIVE CELULAR */
-@media (max-width: 480px) {
+
   .logo {
     width: 140px;
     height: 140px;
@@ -193,9 +188,7 @@ body::before {
   .historias iframe {
     height: 300px;
   }
-}
 
-@media (max-width: 480px) {
   .icon-text {
     font-size: 0.75rem;
     padding: 0.2rem 0.4rem;
